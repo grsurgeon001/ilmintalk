@@ -1,0 +1,26 @@
+.badge {
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(171, 245, 240);
+    font-weight: 600;
+    animation: bageanimation 0.7s ease-in-out infinite;
+}
+
+@keyframes bageanimation {
+    0% {
+        trnasform: none;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        trnasform: none;
+    }
+}
