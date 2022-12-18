@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+
+/* Screens */
+@import "screens/login.css";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: var(--darkblue);
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    background-color: rgb(137, 203, 244);
+    background-image: url(../img/ilmin-logo-s2.png);
+    background-position: 0px 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}
